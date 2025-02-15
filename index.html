@@ -5,8 +5,10 @@
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function() {
             var path = window.location.pathname.substring(1); // Get the path without the leading '/'
+            console.log(path);
             if (path) {
                 var redirectUrl = "https://github.com/Ignite-laboratories/" + path;
+                console.log(redirectUrl);
                 window.location.href = redirectUrl;
             } else {
                 document.body.innerHTML = "<p>Invalid path. Please specify a repository name in the URL.</p>";
